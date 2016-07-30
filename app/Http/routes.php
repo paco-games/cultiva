@@ -11,6 +11,5 @@
 |
 */
 Route::resource('admin','FrontController');
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('/','IndexController');
+Route::resource('log','LogController');
