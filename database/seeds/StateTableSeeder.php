@@ -140,5 +140,46 @@ class StateTableSeeder extends Seeder
         \DB::table('states')->insert(array(
             'namestate'           => 'Zacatecas'
             ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '1'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '2'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '3'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '4'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '5'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '6'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '7'
+            ));
+
+        \DB::table('municipalities')->insert(array(
+            'namemunicipality'  =>'Tehuacan',
+            'state_id'           => '8'
+            ));
+
     }
 }
