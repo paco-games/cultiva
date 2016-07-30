@@ -19,6 +19,7 @@ Route::resource('log','LogController');
 Route::resource('terreno','TerrenoController');
 Route::resource('cultivo','CultivoController');
 Route::get('terreno/vincular/cultivo/{id}', ['as' => 'cultivo.vinc', 'uses' => 'CultivoController@vincular']);
+Route::get('terreno/vincular/asigna/{semilla}/{terreno}', ['as' => 'cultivo.asigna', 'uses' => 'CultivoController@asigna']);
 
 Route::get('importMunicipality','ExcelController@importMunnicipalities');
 
