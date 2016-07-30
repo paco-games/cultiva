@@ -14,14 +14,17 @@ class CreateSeedsTable extends Migration
     {
         Schema::create('seeds', function (Blueprint $table) {
             $table->increments('id'); 
+            $table->string('id_general');
             $table->string('description');
-            $table->integer('user_id');
-            $table->integer('timeProduction');
-            $table->string('image');            
-            $table->float('estimatedEfficiency');            
-            $table->string('period');            
-            $table->string('groundType');     
+            $table->integer('price');
+            $table->integer('gestation');
+            $table->integer('harvest');
+            $table->integer('numseeds');
+            $table->integer('efficiency');
+            $table->string('period');
+            $table->string('typeground');           
             $table->string('weatherType');
+            $table->string('path'); 
             $table->timestamps();
         });
     }

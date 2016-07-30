@@ -1,0 +1,107 @@
+<?php
+
+namespace cultiva\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use cultiva\Http\Requests;
+use cultiva\Http\Controllers\Controller;
+use cultiva\Ground;
+use cultiva\States;
+use Session;
+use Redirect;
+use Log;
+use Illuminate\Routing\Route;
+use Yajra\Datatables\Facades\Datatables;
+class TerrenoController extends Controller
+{
+    public function __construct(){
+        $this->beforeFilter('@find',['only' => ['edit','update','destroy']]);
+    }
+    public function find(Route $route){
+        $this->ground = Ground::find($route->getParameter('terreno'));
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        $datos = Ground::all();
+        return view('terreno.index', compact('datos'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        $estados = States::lists('namestate', 'namestate');
+        return view('terreno.create',compact('estados'));
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        Ground::create($request->all());
+        Session::flash('message','terreno Creada Correctamente');
+        $datos = Ground::all();
+        return view('terreno.index',compact('datos'));
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+         $estados = States::lists('namestate', 'namestate');
+         return view('terreno.edit',compact('estados'),['ground'=>$this->ground]);
+        
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
+}

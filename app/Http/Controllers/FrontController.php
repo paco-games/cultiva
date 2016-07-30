@@ -8,10 +8,12 @@ use cultiva\Http\Requests;
 use cultiva\Http\Controllers\Controller;
 use Illuminate\Http\Response;
 use Illuminate\Contracts\Routing\ResponseFactory;
+use Maatwebsite\Excel\Facades\Excel;
 use Session;
 use Redirect;
 use Illuminate\Routing\Route;
 use File;
+use cultiva\Enterprise;
 
 class FrontController extends Controller
 {
@@ -38,7 +40,7 @@ class FrontController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.create');
     }
 
     /**
@@ -49,7 +51,45 @@ class FrontController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $files = $request->file;
+        $dataExcel = [];
+        
+
+         Excel::selectSheetsByIndex(0)->load($files, function($reader) use ($dataExcel){
+            $reader->skip(3);
+            $result=$reader->all();    
+            $result = $reader->noHeading()->get();
+            foreach($result as $value) 
+            {   
+                if ($value[1]==null && $value[2]==null && $value[3]==null && $value[4]==null && $value[5]==null){
+                    #Obtenemos valores nulos...
+                    
+                }elseif( $value[2]==null && $value[3]==null && $value[4]==null && is_numeric($value[5])) {
+                   #Obtenemos valores de partidas...
+                   $aux = $value[1];
+                   
+                }else{
+                    $dataExcel[] = [
+                    
+                    "descripcion"                 => $value[1],
+                    "preciogramo"                       => $value[2],
+                    "tiempogestaciondias"                     => $value[3],
+                    "tiempocosechasdias"              => $value[4],
+                    "rendimientoestimadoxm"                      => $value[5],
+                    "periodo"                       => $value[6],
+                    "tiposuelo"                     => $value[7],
+                    "tipoclima"              => $value[8]
+                    ];
+                     
+                    
+                }
+            }dd($dataExcel);
+        });
+        
+        $loadep6e7 = LoadEp6E7::where('workplan_id',$workplan_id)->get();
+        $control = ControlEp::find($workplan_id);
+        return view('cargaEp6.index',compact('control','workplan_id','loadep6e7'));
     }
 
     /**

@@ -15,7 +15,7 @@ class CreateGroundsTable extends Migration
         Schema::create('grounds', function (Blueprint $table) {
             //Datos de la tabla Terrenos
             $table->increments('id');
-            $table->string('size', 50);
+            $table->integer('size');
             $table->string('status', 45);
             $table->string('description', 50);
             $table->string('location', 20)->nullable();
@@ -23,9 +23,8 @@ class CreateGroundsTable extends Migration
             //Claves foranea referencia al modelo roles
             $table->integer('user_id');
             //Claves foranea referencia al modelo estados
-            $table->integer('culture_id')->unsigned();
+            $table->string('culture_id');
             //$table->foreign('culture_id')->references('id')->on('cultures');
-            
             //Datos adicionales para control de datos
             $table->rememberToken();
             $table->timestamps();
