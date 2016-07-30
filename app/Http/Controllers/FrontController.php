@@ -14,6 +14,7 @@ use Redirect;
 use Illuminate\Routing\Route;
 use File;
 use cultiva\Enterprise;
+use cultiva\Seed;
 
 class FrontController extends Controller
 {
@@ -57,7 +58,7 @@ class FrontController extends Controller
         
 
          Excel::selectSheetsByIndex(0)->load($files, function($reader) use ($dataExcel){
-            $reader->skip(3);
+            $reader->skip(2);
             $result=$reader->all();    
             $result = $reader->noHeading()->get();
             foreach($result as $value) 
@@ -72,24 +73,39 @@ class FrontController extends Controller
                 }else{
                     $dataExcel[] = [
                     
-                    "descripcion"                 => $value[1],
-                    "preciogramo"                       => $value[2],
-                    "tiempogestaciondias"                     => $value[3],
-                    "tiempocosechasdias"              => $value[4],
-                    "rendimientoestimadoxm"                      => $value[5],
+                    "descripcion"                   => $value[1],
+                    "preciogramo"                   => $value[2],
+                    "tiempogestaciondias"           => $value[3],
+                    "tiempocosechasdias"            => $value[4],
+                    "rendimientoestimadoxm"         => $value[5],
                     "periodo"                       => $value[6],
                     "tiposuelo"                     => $value[7],
-                    "tipoclima"              => $value[8]
+                    "tipoclima"                     => $value[8],
+                    "periodo1"                       => $value[9],
+                    "tiposuelo1"                     => $value[10],
+                    "tipoclima1"              => $value[11]
                     ];
-                     
+                    $Datos = new Seed;
+                    $Datos->id_general                           = $value[1];
+                    $Datos->description                               = $value[2];
+                    $Datos->price                            = $value[3];
+                    $Datos->gestation               = $value[4];
+                    $Datos->harvest                    = $value[5];
+                    $Datos->numseeds                    = $value[6];
+                    $Datos->efficiency            = $value[7];
+                    $Datos->period      = $value[8];
+                    $Datos->typeground                      = $value[9];
+                    $Datos->weatherType                            = $value[10];
+                    $Datos->pathperfil                          = $value[11];
+                    //$Datos->state_constructions_id                  =1;
+                    
+                    $Datos->save();
                     
                 }
-            }dd($dataExcel);
+            }
         });
         
-        $loadep6e7 = LoadEp6E7::where('workplan_id',$workplan_id)->get();
-        $control = ControlEp::find($workplan_id);
-        return view('cargaEp6.index',compact('control','workplan_id','loadep6e7'));
+        return view('admin.index');
     }
 
     /**

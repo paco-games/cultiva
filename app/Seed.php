@@ -3,6 +3,7 @@
 namespace cultiva;
 
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 
 class Seed extends Model
 {
@@ -12,15 +13,7 @@ class Seed extends Model
 
     protected $dates = ['deleted_at'];
 
-    protected $fillable = ['id','id_general','description','price','gestation','harvest','numseeds','efficiency','period','typeground','weatherType','path'];
+    protected $fillable = ['id','id_general','description','price','gestation','harvest','numseeds','efficiency','period','typeground','weatherType','pathperfil'];
+    
 
-    //SetAttributte se usa para cuando se guarda una imagen y no se sobreescriba esa imagen
-    public function setPathAttribute($path){
-        
-        if(!empty($path)){
-            $name = Carbon::now()->second.$path->getClientOriginalName();
-        $this->attributes['path'] = $name;
-        \Storage::disk('perfil')->put($name, \File::get($path));
-        }
-    }
 }
