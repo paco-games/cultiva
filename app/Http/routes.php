@@ -13,3 +13,7 @@
 Route::resource('admin','FrontController');
 Route::resource('/','IndexController');
 Route::resource('log','LogController');
+
+Route::resource('indexSeeds','SeedController');
+
+Route::get('createSeeds/{id}', ['as' => 'create.seeds', 'uses' => 'SeedController@create']);

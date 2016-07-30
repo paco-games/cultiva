@@ -21,8 +21,7 @@ class CreateGroundsTable extends Migration
             $table->string('location', 20)->nullable();
             $table->string('irrigation_system', 60);
             //Claves foranea referencia al modelo roles
-            $table->integer('user_id')->unsigned();
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('user_id');
             //Claves foranea referencia al modelo estados
             $table->integer('culture_id')->unsigned();
             //$table->foreign('culture_id')->references('id')->on('cultures');
