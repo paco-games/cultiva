@@ -24,7 +24,7 @@ class CreateSeedsTable extends Migration
             $table->string('period');
             $table->string('typeground');           
             $table->string('weatherType');
-            $table->string('path'); 
+            $table->string('pathperfil'); 
             $table->timestamps();
         });
     }
