@@ -1,277 +1,376 @@
-<title>Sistema de Seguimiento y Control Carretero</title>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Agrox a Agriculture Category Flat Bootstrap Responsive Website Template | Home :: w3layouts<</title>
+<!---css--->
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!---css--->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Sistema de Seguimiento y control" />
-
+<meta name="keywords" content="Agrox Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
- 
-  <!-- Bootstrap Core CSS -->
-  {!!Html::style('css/bootstrap.min.css')!!}
-  <!-- Custom CSS -->
-  {!!Html::style('css/image.css')!!}
-    {!!Html::style('css/style1.css')!!}
-  <!-- Graph CSS -->
-  {!!Html::style('css/font-awesome.css')!!}
-  <!-- jQuery -->
-  <!--webfonts-->
-  {!!Html::style('//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400')!!}
-  <!-- lined-icons -->
-  {!!Html::style('css/icon-font.min.css')!!}
-  
+<!---js--->
+<script src="js/jquery-1.12.0.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<!---js--->
+<!--JS for animate-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    <!--//end-animate-->
+
+<!---webfont--->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!---webfont--->
+<link rel="stylesheet" type="text/css" href="css/style_common.css" />
+ <link rel="stylesheet" type="text/css" href="css/style9.css" />      
 </head>
 <body>
-<div><img src="../img/HeaderSISECC.png" width="100%"></div>
-
-
-        
-        <div class="col-xs-12 col-md-6 form-group">
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 83px; left: 2em; right: 1.5em; width: 600px; height: 290px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 290px; overflow: hidden;">
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/01.jpg" />
-                <div data-u="thumb">SISECC-SCT 2016</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/02.jpg" />
-                <div data-u="thumb">SISECC_SCT 2016</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/03.jpg" />
-                <div data-u="thumb">S I S E C C 2016</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="img/04.jpg" />
-                <div data-u="thumb"> S I S E C C 2016</div>
-            </div>
-            <a data-u="ad" href="http://www.jssor.com" style="display:none">jQuery Slider</a>
-        
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:1000px;height:40px;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
-            <!-- Thumbnail Item Skin Begin -->
-            <div data-u="slides" style="cursor: default;">
-                <div data-u="prototype" class="p">
-                    <div data-u="thumbnailtemplate" class="t"></div>
+    <!---header--->
+        <div class="header-section">
+            <div class="container">
+                <div class="head-bottom">
+                    <div class="logo  wow fadeInDownBig animated animated" data-wow-delay="0.4s">
+                        <h1><a href="index.html">Agrox<span>Farming company</span></a></h1>
+                    </div>
                 </div>
             </div>
-            <!-- Thumbnail Item Skin End -->
         </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
-            <div data-u="prototype" style="width:12px;height:12px;"></div>
+        <!---header--->
+        <!---banner--->
+        <div class="banner">
+            <div class="container">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="index.html" class="wow fadeInDownBig" data-wow-delay=".1s">Inicio <span class="sr-only">(current)</span></a></li>
+                                <li><a href="about.blade.php" class="wow fadeInDownBig" data-wow-delay=".2s">Conócenos</a></li>
+                                <li><a href="services.blade.php" class="wow fadeInDownBig" data-wow-delay=".4s">Servicios</a></li>
+                                <li><a href="gallery.blade.php" class="wow fadeInDownBig" data-wow-delay=".6s">Galeria</a></li>
+                                <li><a href="codes.blade.php" class="wow fadeInDownBig" data-wow-delay=".7s">Codes</a></li>
+                                <li><a href="contact.blade.php" class="wow fadeInDownBig" data-wow-delay=".9s">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="banner-center">
+                    <marquee><h3>Best Agricultural farm</h3></marquee>
+                </div>
+                
+            </div>
         </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+<!---banner-->
+    <!---welcome-->
+    <div class="content">
+        <div class="welcome-section">
+            <div class="container">
+            <div class="banner-bottom">
+                    <div class="banner-grids">
+                        <div class="col-md-4 banner-grid wow fadeInLeft animated" data-wow-delay=".5s">
+                            <h4>Premium Products</h4>
+                            <div class="ban1">
+                                <div class="ban-images  view fourth-effect">
+                                    <img src="images/b1.jpg" class="img-responsive" alt=""/>
+                                <div class="mask"></div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, lorem  Consec tetuer adipicing it. Praesebul lorem ipsum.S natoque penatibus et gnis dent monteiculu.</p>
+                                <a href="about.html" class="button hvr-wobble-bottom">more info</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 banner-grid wow fadeInDownBig" data-wow-delay=".4s">
+                            <h4>Agricultural Seeds </h4>
+                                <div class="ban1">
+                                    <div class="ban-images  view fourth-effect">
+                                        <img src="images/b2.jpg" class="img-responsive" alt=""/>
+                                    <div class="mask"></div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, lorem  Consec tetuer adipicing it. Praesebul lorem ipsum.S natoque penatibus et gnis dent monteiculu.</p>
+                                    <a href="about.html" class="button hvr-wobble-bottom">more info</a>
+                                </div>
+                            </div>
+                        <div class="col-md-4 banner-grid wow fadeInRight animated" data-wow-delay=".5s">
+                            <h4>Our Technologies</h4>
+                                <div class="ban1">
+                                    <div class="ban-images  view fourth-effect">
+                                        <img src="images/b1.jpg" class="img-responsive" alt=""/>
+                                        <div class="mask"></div>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, lorem  Consec tetuer adipicing it. Praesebul lorem ipsum.S natoque penatibus et gnis dent monteiculu.</p>
+                                    <a href="about.html" class="button hvr-wobble-bottom">more info</a>
+                                </div>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <h2>welcome</h2>
+                <div class="welcome-grids">
+                    <div class="col-md-3 welcome-grid wow fadeInLeft animated" data-wow-delay=".5s">
+                        <div class="welcome-text">
+                            <h4>Duis ultricies</h4>
+                            <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremqueexplicabo.</p>
+                        </div>
+                        <div class="welcome-icon">
+                            <img src="images/i1.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 welcome-grid wow fadeInDownBig animated" data-wow-delay=".5s">
+                        <div class="welcome-text">
+                            <h4>Morbi nunc </h4>
+                            <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremqueexplicabo.</p>
+                        </div>
+                        <div class="welcome-icon">
+                            <img src="images/i2.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 welcome-grid wow fadeInUpBig animated" data-wow-delay=".5s">
+                        <div class="welcome-text">
+                            <h4>Lorem ipsum</h4>
+                            <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremqueexplicabo.</p>
+                        </div>
+                        <div class="welcome-icon">
+                            <img src="images/i3.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 welcome-grid wow fadeInRight animated" data-wow-delay=".5s">
+                        <div class="welcome-text">
+                            <h4>Fusce suscip</h4>
+                            <p>Sed ut perspiciatis undeomnis iste natus error sit voluptatem accusantium doloremqueexplicabo.</p>
+                        </div>
+                        <div class="welcome-icon">
+                            <img src="images/i4.png">
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---welcome-->
+        <!---product-->
+        <div class="product-section">
+            <div class="container">
+                <h3>Popular Products</h3>
+                <div class="product-grids">
+                    <div class="col-md-6 product-grid wow fadeInLeft animated" data-wow-delay=".5s">
+                        <div class="product-left">
+                        <img src="images/p.jpg" class="img-responsive" alt=""/> 
+                        </div>
+                        <div class="product-right">
+                            <h4>Dolor Sit</h4>
+                            <p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
+                            <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-6 product-grid wow fadeInRight animated" data-wow-delay=".5s">
+                        <div class="product-left">
+                        <img src="images/p1.jpg" class="img-responsive" alt=""/>    
+                        </div>
+                        <div class="product-right">
+                            <h4>Consequat</h4>
+                            <p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
+                            <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="product-grids">
+                    <div class="col-md-6 product-grid1 wow fadeInLeft animated" data-wow-delay=".5s">
+                        <div class="product1-left">
+                            <h4>Dolores Btrs</h4>
+                            <p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
+                            <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="product1-right">
+                            <img src="images/p2.jpg" class="img-responsive" alt=""/>    
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="col-md-6 product-grid1 wow fadeInRight animated" data-wow-delay=".5s">
+                        <div class="product1-left">
+                            <h4>Nam aliquam</h4>
+                            <p>Nsatolernatur auts oditaut miertase vertas.Measnseqe ustur magni dolores eoqus ratione voluptate.</p>
+                            <a href="gallery.html"><i class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="product1-right">
+                            <img src="images/p3.jpg" class="img-responsive" alt=""/>    
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---product-->
+        <!---news--->
+        <div class="news-section">
+            <div class="container">
+                <h3>latest news</h3>
+                <div class="news-grids wow fadeInRight animated" data-wow-delay=".5s">
+                    <div class="col-md-4 new-grid">
+                        <div id="box" class="burst-circle teal">
+                            <div class="caption"></div>
+                            <img src="images/n1.jpg" class="img-responsive" />
+                            <h4>Agrox</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 new-grid1 hvr-bounce-to-right">
+                        <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
+                        <h4>Fusce euismod consequat ante Lorem ipsum dolor sit amet</h4>
+                        <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
+                    <div class="col-md-4 new-grid">
+                        <div id="box" class="burst-circle teal">
+                            <div class="caption"></div>
+                            <img src="images/n2.jpg" class="img-responsive" />
+                            <h4>Agrox</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 new-grid1 hvr-bounce-to-right">
+                        <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
+                        <h4>Fusce euismod consequat ante Lorem ipsum dolor sit amet</h4>
+                        <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="news-grids wow fadeInRight animated" data-wow-delay=".5s">
+                    <div class="col-md-4 new-grid">
+                        <div id="box" class="burst-circle teal">
+                            <div class="caption"></div>
+                            <img src="images/n3.jpg" class="img-responsive" />
+                            <h4>Agrox</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 new-grid1 hvr-bounce-to-right">
+                        <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
+                        <h4>Fusce euismod consequat ante Lorem ipsum dolor sit amet</h4>
+                        <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+                    </div>
+                <div class="clearfix"></div>
+                </div>
+                <div class="news-grids wow fadeInLeft animated" data-wow-delay=".5s">
+                    <div class="col-md-4 new-grid">
+                        <div id="box" class="burst-circle teal">
+                            <div class="caption"></div>
+                            <img src="images/n4.jpg" class="img-responsive" />
+                            <h4>Agrox</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-8 new-grid1 hvr-bounce-to-right">
+                        <h5><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i> 25 November 2015 </h5>
+                        <h4>Fusce euismod consequat ante Lorem ipsum dolor sit amet</h4>
+                        <p>Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In justo est, sollicitudin eu scelerisque pretium, placerat eget elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id tellus. Donec justo tellus.</p>
+                    </div>
+                <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+            <!---news--->
+        <!---Testimonials--->
+        <div class="testimonials-section">
+            <div class="container">
+                <h3>Testimonial</h3>
+                <div class="testimonials-grids">
+                    <div class="col-md-2 testimonials-grid1 wow fadeInRight animated" data-wow-delay=".5s">
+                        <img src="images/t1.png" class="img-responsive" alt=""/>
+                    </div>
+                    <div class="col-md-10 testimonials-grid wow fadeInLeft animated" data-wow-delay=".5s">
+                        <p>Epsum factorial non deposit quid pro quo hic escorol. Olypian quarrels et gorilla congolium sic ad nauseum. Souvlaki ignitus carborundum e pluribus unum. Defacto lingo est igpay atinlay. Marquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus niacin, sodium glutimate. Quote meon an estimate et non interruptus stadium.</p>
+                        <h5>Antonio Brightman</h5>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---Testimonials--->
     </div>
-    </div>
-    
-    <div>
-        <aside class="profile-card">
-    <!--/login-->
-
-        <div class="error-top">
-
-            <div class="col-xs-12 col-md-6" id="login">
-                <h3 class="inner-tittle t-inner" >Login</h3>
-                        @yield('content')
-            </div>                                      
+    <!---footer--->
+        <div class="footer-section">
+            <div class="container">
+            <div class="footer-grids">
+                <div class="col-md-3 footer-grid wow fadeInRight animated" data-wow-delay=".5s">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Customer focus</li>                     
+                        <li>Sed laoreet aliqu</li>
+                        <li>Dapibus eget elem</li>
+                        <li>Performance</li>
+                        <li>Innovation</li>
+                        <li>Responsibility</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid wow fadeInDownBig animated" data-wow-delay=".5s">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li>Contact Center</li>
+                        <li>Customer Support</li>
+                        <li>Dapibus eget elem</li>
+                        <li>Help Desk</li>
+                        <li>Web Self-Service</li>
+                        <li>Performance Metrics</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid wow fadeInUpBig animated" data-wow-delay=".5s">
+                <h4>Work</h4>
+                    <ul>
+                        <li>Customer Support</li>
+                        <li>Platinum Support</li>
+                        <li>Gold Support</li>
+                        <li>Training</li>
+                        <li>Workshops</li>
+                        <li>Online Training</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-grid wow fadeInRight animated" data-wow-delay=".5s">
+                    <h4>Contact</h4>
+                    <p>9801 Marmora Road</p>
+                    <p>Glasgow, DO4 98GR.</p>
+                    <p>Freephone: +1 900 448 9990</p>
+                    <p>Telephone: +1 459 503 7035</p>
+                    <p>FAX: + 1 304 789 7898</p>
+                    <a href="mailto:example@mail.com"> example@mail.com</a>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            </div>
+        </div>  
+    <!---footer--->
+    <!--copy-->
+    <div class="copy-section wow fadeInRight animated" data-wow-delay=".5s"">
+        <div class="container">
+                <div class="social-icons">
+                    <a href="#"><i class="icon"></i></a>
+                    <a href="#"><i class="icon1"></i></a>
+                    <a href="#"><i class="icon2"></i></a>
+                    <a href="#"><i class="icon3"></i></a>
+                </div>
+            <p>&copy; 2016 Agrox. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
         </div>
-        
-           <br>
-           <br>
-        <div class="footer">
-      
-<center><img src="../img/footer.png" width="80%"><center>
-
-         <p><center>&copy SISECC 2016</center></p>
-<center><img src="../img/NS.png" width="5%"><center>
-        
-        </div>
-        </aside>
     </div>
-    
-
-        
-
-           
-        
-
-     
-<!--js -->
-<!--inicio de slider-->
-
-<div>
-    <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<div style="padding:0px; margin:0px; background-color:#fff;font-family:Arial, sans-serif">
-
-    <!-- #region Jssor Slider Begin -->
-
-    <!-- Generated by Jssor Slider Maker. -->
-    <!-- This demo works without jquery library. -->
-
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
-    <script>
-        jssor_1_slider_init = function() {
-            
-            var jssor_1_SlideshowTransitions = [
-              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
-            
-            var jssor_1_options = {
-              $AutoPlay: true,
-              $SlideshowOptions: {
-                $Class: $JssorSlideshowRunner$,
-                $Transitions: jssor_1_SlideshowTransitions,
-                $TransitionsOrder: 1
-              },
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              },
-              $ThumbnailNavigatorOptions: {
-                $Class: $JssorThumbnailNavigator$,
-                $Cols: 1,
-                $Align: 0,
-                $NoDrag: true
-              }
-            };
-            
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-            
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //responsive code end
-        };
-    </script>
-
-    <style>
-        
-        /* jssor slider bullet navigator skin 01 css */
-        /*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
-        .jssorb01 {
-            position: absolute;
-        }
-        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 12px;
-            height: 12px;
-            filter: alpha(opacity=70);
-            opacity: .7;
-            overflow: hidden;
-            cursor: pointer;
-            border: #000 1px solid;
-        }
-        .jssorb01 div { background-color: gray; }
-        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-        .jssorb01 .av { background-color: #fff; }
-        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
-
-        /* jssor slider arrow navigator skin 05 css */
-        /*
-        .jssora05l                  (normal)
-        .jssora05r                  (normal)
-        .jssora05l:hover            (normal mouseover)
-        .jssora05r:hover            (normal mouseover)
-        .jssora05l.jssora05ldn      (mousedown)
-        .jssora05r.jssora05rdn      (mousedown)
-        */
-        .jssora05l, .jssora05r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: url('img/a17.png') no-repeat;
-            overflow: hidden;
-        }
-        .jssora05l { background-position: -10px -40px; }
-        .jssora05r { background-position: -70px -40px; }
-        .jssora05l:hover { background-position: -130px -40px; }
-        .jssora05r:hover { background-position: -190px -40px; }
-        .jssora05l.jssora05ldn { background-position: -250px -40px; }
-        .jssora05r.jssora05rdn { background-position: -310px -40px; }
-
-        /* jssor slider thumbnail navigator skin 09 css */
-        
-        .jssort09-600-45 .p {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 600px;
-            height: 45px;
-        }
-        
-        .jssort09-600-45 .t {
-            font-family: verdana;
-            font-weight: normal;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            color:#fff;
-            line-height: 45px;
-            font-size: 20px;
-            padding-left: 10px;
-        }
-        
-    </style>
-
-
-
-    <script>
-        jssor_1_slider_init();
-    </script>
-</div>
-<br>
-<br>
-<br>
-<br>
-
-
-
- 
-    <!-- Fin de slider -->
-
-  {!!Html::script('js/jquery.nicescroll.js')!!}
-  {!!Html::script('js/scripts.js')!!}
-  {!!Html::script('js/bootstrap.min.js')!!}
+    <!--copy-->
 </body>
 </html>
