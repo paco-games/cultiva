@@ -26,10 +26,8 @@ class CreateUsersTable extends Migration
             //Claves foranea referencia al modelo roles
             $table->integer('typeuser')->unsigned();
             //Claves foranea referencia al modelo estados
-            $table->integer('state_id')->unsigned();
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->integer('municipalities_id')->unsigned();
-            $table->foreign('municipalities_id')->references('id')->on('municipalities');
+            $table->integer('state_id');
+            $table->integer('municipalities_id');
             //Datos adicionales para control de datos
             $table->rememberToken();
             $table->timestamps();

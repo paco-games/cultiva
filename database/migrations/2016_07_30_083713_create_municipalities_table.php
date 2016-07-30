@@ -16,8 +16,7 @@ class CreateMunicipalitiesTable extends Migration
             $table->increments('id');
             $table->string('namemunicipality', 30);
             //clave foranea que relaciona a la tabla de estados
-            $table->integer('state_id')->unsigned();
-            $table->foreign('state_id')->references('id')->on('states');
+            $table->integer('state_id');
             $table->timestamps();
         });
     }
