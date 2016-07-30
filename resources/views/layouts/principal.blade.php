@@ -30,9 +30,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="body">
                 <div class="login-top sign-top w3-agile">
-                             <form action="#" method="post">
-                                    <input type="text" name="Name" class="name active" placeholder="Your Name" required="">
-                                    <input type="text" name="Email" class="email" placeholder="Email" required="">
+                {!!Form::open(['route'=>'usuario.store', 'method'=>'POST'])!!}
+                                    <input type="text" name="name" class="name active" placeholder="Ingresa tu nombre" required="">
+                                    <input type="text" name="email" class="email" placeholder="Email" required="">
                                     <input type="text" name="Phone" class="phone" placeholder="Phone" required="">
                                     <input type="password" name="Password" class="password" placeholder="Password" required="">     
                                     <input type="checkbox" id="brand1" value="">
@@ -49,8 +49,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             
                                     <div class="clear"></div>
                                 </div>  
-                                </form>
                                 
+                        {!!Form::close()!!}        
                             </div>
             </div>
           </div>
@@ -70,25 +70,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <h2>Login</h2>
                         </div>
                                 <div class="login-top">
-                                 <form action="#" method="post">
-                                    <input type="text" name="Email" class="email" placeholder="Email" required=""/>
-                                    <input type="password" name="Password" class="password" placeholder="Password" required=""/>    
-                                    <input type="checkbox" id="brand" value="">
-                                    <label for="brand"><span></span> Remember me</label>
-                                    <div class="login-bottom">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Forgot password?</a>
-                                        </li>
-                                        <li>
-                                            <form>
-                                                <input type="submit" value="LOGIN"/>
-                                            </form>
-                                        </li>
-                                    <ul>
-                                    <div class="clearfix"></div>
-                                </div>
-                                </form>
+                                {!!Form::open(['route'=>'log.store', 'method'=>'POST'])!!}
+                                    <div class="vali-form form-group1">
+                                        {!!Form::label('correo','Correo:')!!}   
+                                        {!!Form::email('email',null,['class'=>'form-control', 'placeholder'=>'Ingresa tu correo'])!!}
+
+                                        {!!Form::label('contrasena','Contraseña:')!!}   
+                                        {!!Form::password('password',['class'=>'form-control', 'placeholder'=>'Ingresa tu contraseña'])!!}
+                                    </div>
+                                {!!Form::submit('Iniciar',['class'=>'btn blue one'])!!}
+                                {!!Form::close()!!}
                                 
                                 <div class="clearfix"></div>
                                                     

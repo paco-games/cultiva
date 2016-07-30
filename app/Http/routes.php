@@ -12,5 +12,7 @@
 */
 
 Route::resource('admin','FrontController');
-Route::resource('/','IndexController');
+Route::resource('registro','IndexController');
+Route::resource('usuario','UsuarioController');
 Route::resource('log','LogController');
+Route::get('importMunicipality','ExcelController@importMunnicipalities');
