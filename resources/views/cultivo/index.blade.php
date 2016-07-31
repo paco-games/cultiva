@@ -21,7 +21,7 @@
     @include('alerts.success')
     <div class="row">
       <div class="col-md-12">
-        <div class="card card-bordered style-success">
+        <div class="card card-bordered style-accent">
         <div class="card-head">
           <header><i class="md md-location-city"></i> Tu planta</header>
           <div class="tools">

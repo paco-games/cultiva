@@ -19,7 +19,7 @@
     </div>
       @include('alerts.success')
     <div class="row">
-      <div class="card card-bordered style-success">
+      <div class="card card-bordered style-accent">
        
           <header>
           <div class="col-md-12 ">
@@ -41,7 +41,7 @@
                             <tr>
                             <div class="col-lg-12 col-sm-6">
                               <div class="card">
-                                <div class="card-head card-head-sm style-success">
+                                <div class="card-head card-head-sm style-accent">
                                   <header>{{$terreno->description}}</header>
                                 </div><!--end .card-head -->
                                 <?php
@@ -60,8 +60,8 @@
                                    <center> <img src="Fases/Fase2{{$terreno->pathperfil}}" alt="" style=" width: 280px"></center>
                                   @elseif($duracionActual<=($duracionPeriodo*3))
                                    <center> <img src="Fases/Fase1{{$terreno->pathperfil}}" alt="" style=" width: 280px"></center>
-                                    @else 
-                                   <center> <img src="/assets/img/avatar1.jpg" alt="" style=" width: 280px" /></center>
+                                  @else 
+                                  <center> <img src="/assets/img/avatar1.jpg" alt="" style=" width: 280px" /></center>
                                   @endif
 
                                  

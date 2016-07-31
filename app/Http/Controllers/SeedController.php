@@ -9,6 +9,8 @@ use cultiva\Http\Controllers\Controller;
 use Session;
 use Redirect;
 
+use DB;
+
 class SeedController extends Controller
 {
     /**
@@ -19,7 +21,8 @@ class SeedController extends Controller
     public function index()
     {
         //
-        return view('seeds.index');
+        $semillas = DB::table('seeds')->get();
+        return view('cultivo.listadoSemillas',compact('semillas'));
     }
 
     /**

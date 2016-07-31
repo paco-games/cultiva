@@ -56,22 +56,22 @@
                           <tbody>
                              @foreach($semillas as $semilla)
                             <tr>
-                            <div class="col-lg-3 col-sm-6">
+                            <div class="col-lg-4 col-sm-6">
                               <div class="card">
                                 <div class="card-head card-head-sm style-accent">
                                   <header>{{$semilla->description}}</header>
-                                  <div class="tools"> 
-                                  {!!link_to_route('cultivo.asigna', $title = '', $parameters = [$semilla->id,$terreno->id], $attributes = ['class'=>'btn btn-icon-toggle md md-add','data-toggle'=>'tooltip','data-placement'=>'top','data-original-title'=>'Vincular un cultivo'])!!}
+                                  
                                              
                                   </div>
                                 </div><!--end .card-head -->
                                 <div class="card-body">
-                                 <img src="/Imagenes/{{$semilla->pathperfil}}" alt="" style=" width: 90px"> <br><br>
+                                <center> <img src="/Imagenes/{{$semilla->pathperfil}}" alt="" style=" width: 80px"> </center>
+                                <br>
                                   
                                  <ul>Precio por Sobre (1g): {{$semilla->price}}  $</ul>
                                 <ul>Siembra a Cosecha: {{$semilla->gestation}} día(s) </ul>
-                                  <ul>Costo de siembra: {{(($semilla->price/$semilla->numseeds)*$semilla->efficiency)*$terreno->size}} $</ul>
-                                  <ul>Superficie Siembra: {{$terreno->size}} m²</ul>
+                                  <ul>Costo de siembra por metro Cuadrado: {{(($semilla->price/$semilla->numseeds)*$semilla->efficiency)*1}} $</ul>
+                               
                                   <ul>Tiempo de cocecha: {{$semilla->harvest}} día(s)</ul>
                                 </div><!--end .card-body -->
                               </div><!--end .card -->
