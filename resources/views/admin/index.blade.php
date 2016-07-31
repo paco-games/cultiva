@@ -44,44 +44,47 @@
                                 <div class="card-head card-head-sm style-success">
                                   <header>{{$terreno->description}}</header>
                                 </div><!--end .card-head -->
+                                <?php
+                                $duracionPeriodo=$terreno->gestation/3;
+                                $now = Carbon::now();
+                                $end_date = Carbon::parse($terreno->dateInit);
+                                $duracionActual = $end_date->diffInDays($now);
+
+                                ?>
                                 <div class="card-body">
                                 <div class="row">
-                                  <div class="col-md-8  rowspan="4""> 
+                                  <div class="col-md-8  rowspan="6""> 
+                                  @if($duracionActual<=$duracionPeriodo)
+                                  <center><img src="Fases/Fase1{{$terreno->pathperfil}}" alt="" style=" width: 280px"></center>
+                                  @elseif($duracionActual<=($duracionPeriodo*2))
+                                   <center> <img src="Fases/Fase2{{$terreno->pathperfil}}" alt="" style=" width: 280px"></center>
+                                  @elseif($duracionActual<=($duracionPeriodo*3))
+                                   <center> <img src="Fases/Fase1{{$terreno->pathperfil}}" alt="" style=" width: 280px"></center>
+                                    @else 
+                                   <center> <img src="/assets/img/avatar1.jpg" alt="" style=" width: 280px" /></center>
+                                  @endif
+
                                  
-                                  <img src="perfil/{{$terreno->pathperfil}}" alt="" style=" width: 70px">
-                                    <img src="perfil/{{$terreno->pathperfil}}" alt="" style=" width: 70px">
-                                    <img src="/assets/img/avatar1.jpg" alt="" style=" width: 70px" />
-                                    
-
-                                  <img src="/Imagenes/Fase1{{$terreno->pathperfil}}" alt="" style=" width: 280px">
                                   </div>
-                                  <div class="col-md-4">{!!Form::label('status',($terreno->gestation/3))!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
-                                   <div class="col-md-4">{!!Form::label('status',
-                                   $terreno->dateInit)!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
-                                  <div class="col-md-4">{!!Form::label('status','Estatus del terreno:')!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
+                                  <div class="col-md-4">
+                                  {!!Form::label('status','Dias desde que se sembro:  '.$duracionActual.' dias')!!}
+                                  </div>
+                                   <div class="col-md-4">
+                                    @if($duracionActual<=$duracionPeriodo)
+                                      {!!Form::label('status',' Primer Fase de Gestación')!!}
+                                    @elseif($duracionActual<=($duracionPeriodo*2))
+                                      {!!Form::label('status', 'Segunda Fase Gestación')!!}
+                                    @elseif($duracionActual<=($duracionPeriodo*3)) {!!Form::label('status', 'Tercer Fase de Gestación')!!}
+                                    @endif
+                                  
+                                   </div>
+                                  <div class="col-md-4">{!!Form::label('status','Tiempo Total de Gestación  '.$terreno->gestation.' dias')!!}
+                                  </div>
 
-                                  <div class="col-md-4">{!!Form::label('status','Estatus del terreno:')!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
+                                  <div class="col-md-4">{!!Form::label('status','Dias para la cosecha '.($terreno->gestation-$duracionActual).' dias')!!}</div>
                                   </div>                               
                                 </div>
-                                <div class="row">
-                                  <div class="col-md-4">{!!Form::label('status','Estatus del terreno:')!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
-                                  <div class="col-md-4">{!!Form::label('status','Estatus del terreno:')!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
-                                  <div class="col-md-4">{!!Form::label('status','Estatus del terreno:')!!}
-                                  <br>
-                                  {!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}</div>
-                                </div>
+                               
                                 </div><!--end .card-body -->
                               </div><!--end .card -->
                             </div><!--end .col -->

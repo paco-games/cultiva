@@ -21,11 +21,11 @@
     @include('alerts.success')
     <div class="row">
       <div class="col-md-12">
-        <div class="card card-bordered style-success">
+        <div class="card card-bordered style-accent">
         <div class="card-head">
           <header><i class="md md-location-city"></i> Terrenoss</header>
           <div class="tools">
-          {!!link_to_route('terreno.create', $title = 'Nuevo', $parameters = "", $attributes =   ['class'=>'btn btn-block ink-reaction btn-primary-dark'])!!}
+          {!!link_to_route('terreno.create', $title = 'Nuevo', $parameters = "", $attributes =   ['class'=>'btn btn-block ink-reaction btn-style-warning'])!!}
         </div>
         </div>
         <div class="card-body style-default-bright">
@@ -61,7 +61,7 @@
                             <tr>
                             <div class="col-lg-3 col-sm-6">
                               <div class="card">
-                                <div class="card-head card-head-sm style-primary">
+                                <div class="card-head card-head-sm style-accent">
                                   <header>Terreno {{$dato->status}}</header>
                                   <div class="tools">
                                   {!!link_to_route('cultivo.vinc', $title = '', $parameters = $dato->id, $attributes = ['class'=>'btn btn-icon-toggle md md-add','data-toggle'=>'tooltip','data-placement'=>'top','data-original-title'=>'Vincular un cultivo'])!!}
@@ -71,7 +71,7 @@
                                 </div><!--end .card-head -->
                                 <div class="card-body">
                                   Tamaño de terreno: {{$dato->size}} m² <br>
-                                  Localidad: {{$dato->location}} <br>
+                                  Unicación: {{$dato->location}} <br>
                                   Descripcion: {{$dato->description}} <br>
                                   Sistema de riego: {{$dato->irrigation_system}} <br>
                                   Se pretende sembrar: {{$dato->culture_id}}

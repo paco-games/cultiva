@@ -13,7 +13,7 @@
 		{!!Form::select('status', array('Libre' => 'Libre', 'Ocupado' => 'Ocupado'), null, ['id'=>'type','class' => 'js-example-basic-single js-states form-control']);!!}
 	</div>
 	<div class="col-md-6">
-		{!!Form::label('location','Ubicacon :')!!}
+		{!!Form::label('location','Ubicación :')!!}
 		{!!Form::select('location', $estados, null, ['id'=>'location','class' => 'js-example-tags js-states form-control']);!!}
 	</div>
 	<div class="col-md-6">
