@@ -15,6 +15,9 @@ use Illuminate\Routing\Route;
 use File;
 use cultiva\Enterprise;
 use cultiva\Seed;
+use cultiva\Ground;
+use DB;
+
 
 class FrontController extends Controller
 {
@@ -31,6 +34,16 @@ class FrontController extends Controller
      */
     public function index()
     {
+        $activeFarms = DB::table('active_farms')->where('status','!=','Terminado')->get();
+         $terrenos= DB::table('active_farms')
+            ->leftjoin('grounds', 'active_farms.id', '=', 'grounds.activeFarm_id')
+            ->leftjoin('seeds', 'active_farms.seed_id', '=', 'seeds.id')
+            ->get();
+            $terrenos= DB::table('seeds')
+            ->rightjoin('active_farms', 'seeds.id', '=', 'active_farms.seed_id')
+            ->leftjoin('grounds', 'active_farms.id', '=', 'grounds.activeFarm_id')
+            ->get();
+        dd($terrenos);
         return view('admin.index');
     }
 
